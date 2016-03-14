@@ -1,0 +1,1 @@
+var madLibsApp=angular.module("ngMadLibs",[]);madLibsApp.controller("madLibsController",["$scope",function(e){e.name="Name",e.dirtyTask="Dirty Task",e.obnoxCeleb="Obnox Celeb",e.jobTitle="Job Title",e.celeb="Celeb",e.hugeNum="Huge Number",e.tediousTask="Tedious Task",e.uselessSkill="Useless Skill",e.adjective="Adjective",e.gender="m",e.changeGender=function(l){e.gender=l}}]);
