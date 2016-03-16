@@ -1,0 +1,1 @@
+var myNewModule=angular.module("myNewModule",["ngMessages"]);

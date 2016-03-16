@@ -1,18 +1,31 @@
 var madLibsApp = angular.module('ngMadLibs', []);
 	madLibsApp.controller('madLibsController', ['$scope', function($scope){
-	$scope.name = 'Name';
-	$scope.dirtyTask = 'Dirty Task';
-	$scope.obnoxCeleb = 'Obnox Celeb';
-	$scope.jobTitle = 'Job Title';
-	$scope.celeb = 'Celeb';
-	$scope.hugeNum = 'Huge Number';
-	$scope.tediousTask = 'Tedious Task';
-	$scope.uselessSkill = 'Useless Skill';
-	$scope.adjective = 'Adjective';
 
-	$scope.gender = 'm'
+
+	$scope.gender = 'm';
+	//$scope.btnIsClicked = false;
 	
 	$scope.changeGender = function(gender){
 		$scope.gender = gender;
 	};
+
+	$scope.showParagraph = function() {
+		$scope.btnIsClicked = true;
+	}
+
+	$scope.resetGame = function() {
+		$scope.btnIsClicked = false;
+		$scope.name = '';
+		$scope.dirtyTask = '';
+		$scope.obnoxCeleb = '';
+		$scope.jobTitle = '';
+		$scope.celeb = '';
+		$scope.hugeNum = '';
+		$scope.tediousTask = '';
+		$scope.uselessSkill = '';
+		$scope.adjective = '';
+	}
+
+	$scope.resetGame();
+
 }]);
